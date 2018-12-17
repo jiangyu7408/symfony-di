@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 vendor
+runtime/cache/*.meta
 ### Symfony template
 
 # Email spool folder
