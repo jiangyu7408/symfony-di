@@ -1,0 +1,28 @@
+{
+    "name": "di/symfony-case",
+    "description": "Dependency injection case study.",
+    "type": "project",
+    "require": {
+        "symfony/dependency-injection": "^4.2",
+        "symfony/config": "^4.2",
+        "symfony/yaml": "^4.2",
+        "ext-json": "^1.6",
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "escapestudios/symfony2-coding-standard": "^3.4"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "JiangYu",
+            "email": "jiangyu7408@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Vendor\\Namespace\\": ""
+        }
+    }
+}

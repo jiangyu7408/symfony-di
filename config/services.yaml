@@ -1,0 +1,19 @@
+parameters:
+  mailer.transport: sendmail
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  App\MailerInterface: '@App\Mailer'
+  App\Mailer:
+    arguments: ['%mailer.transport%']
+
+  App\LoggerInterface: '@App\Logger'
+  App\Logger: ~
+  App\Logger2: ~
+
+  App\NewsletterManager:
+    public: true
